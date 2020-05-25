@@ -51,6 +51,13 @@ cube(`Film`, {
     lastUpdate: {
       sql: `last_update`,
       type: `time`
+    },
+
+    filmId: {
+      sql: `film_id`,
+      type: `number`,
+      primaryKey: true,
+      shown: true
     }
   }
 });
