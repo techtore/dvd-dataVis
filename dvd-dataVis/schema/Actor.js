@@ -1,5 +1,5 @@
 cube(`Actor`, {
-  sql: `SELECT * FROM public.actor`,
+  sql: `SELECT *  FROM public.actor LIMIT 5`,
   
   joins: {
     FilmActor: {
@@ -12,8 +12,13 @@ cube(`Actor`, {
     count: {
       type: `count`,
       drillMembers: [lastName, firstName, lastUpdate]
-    }
+    },
+    // limit: 5,
+    // order: {
+    // 'actor.count': 'desc'
+    // }
   },
+  
   
   dimensions: {
     lastName: {
