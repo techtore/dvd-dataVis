@@ -1,5 +1,5 @@
 cube(`City`, {
-  sql: `SELECT * FROM public.city`,
+  sql: `SELECT * FROM public.city LIMIT 5`,
   
   joins: {
     
@@ -21,6 +21,12 @@ cube(`City`, {
     lastUpdate: {
       sql: `last_update`,
       type: `time`
+    },
+    cityId: {
+      sql: `city_id`,
+      type: `number`,
+      primaryKey: true,
+      shown: true
     }
   }
 });
