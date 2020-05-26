@@ -2,7 +2,10 @@ cube(`Actor`, {
   sql: `SELECT * FROM public.actor`,
   
   joins: {
-    
+    FilmActor: {
+      sql: `${CUBE}.actor_id = ${FilmActor}.actor_id`,
+      relationship: `belongsTo`
+    }
   },
   
   measures: {
