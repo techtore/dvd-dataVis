@@ -26,6 +26,13 @@ cube(`FilmActor`, {
       primaryKey: true,
       shown: true
 
+    },
+    actorId: {
+      sql: 'actor_id',
+      type: 'number',
+      primaryKey: true,
+      shown: true
+
     }
   }
 });

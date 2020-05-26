@@ -29,6 +29,13 @@ cube(`Actor`, {
     lastUpdate: {
       sql: `last_update`,
       type: `time`
+    },
+    actorId: {
+      sql: 'actor_id',
+      type: 'number',
+      primaryKey: true,
+      shown: true
+
     }
   }
 });
