@@ -21,6 +21,13 @@ cube(`Language`, {
     lastUpdate: {
       sql: `last_update`,
       type: `time`
+    },
+    languageId: {
+      sql: `language_id`,
+      type: `number`,
+      primaryKey: true,
+      shown: true
     }
+
   }
 });
