@@ -1,5 +1,5 @@
 cube(`Film`, {
-  sql: `SELECT * FROM public.film`,
+  sql: `SELECT * FROM public.film LIMIT 10`,
   
   joins: {
     

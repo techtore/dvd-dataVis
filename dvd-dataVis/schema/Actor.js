@@ -13,10 +13,6 @@ cube(`Actor`, {
       type: `count`,
       drillMembers: [lastName, firstName, lastUpdate]
     },
-    // limit: 5,
-    // order: {
-    // 'actor.count': 'desc'
-    // }
   },
   
   
