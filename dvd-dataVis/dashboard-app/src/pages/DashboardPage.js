@@ -33,6 +33,23 @@ const DashboardItems = [
       },
       chartType: "pie"
     }
+  },
+  {
+    id: 2,
+    name: "New Chart",
+    vizState: {
+      query: {
+        measures: ["City.count"],
+        timeDimensions: [
+          {
+            dimension: "City.lastUpdate"
+          }
+        ],
+        dimensions: ["City.city"],
+        filters: []
+      },
+      chartType: "pie"
+    }
   }
 ];
 

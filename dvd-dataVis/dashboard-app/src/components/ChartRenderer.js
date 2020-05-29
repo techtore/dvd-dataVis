@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { useCubeQuery } from "@cubejs-client/react";
 import { Spin, Row, Col, Statistic, Table } from "antd";
 import { Line, Bar, Pie } from "react-chartjs-2";
-const COLORS_SERIES = ["#FF6492", "#141446", "#7A77FF"];
+const COLORS_SERIES = ["#FF6492", "#141446", "#7A77FF", "#FBA2CF", "#C8BBF0" ];
 const TypeToChartComponent = {
   line: ({ resultSet }) => {
     const data = {

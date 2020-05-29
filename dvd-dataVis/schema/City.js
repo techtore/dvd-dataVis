@@ -1,5 +1,5 @@
 cube(`City`, {
-  sql: `SELECT * FROM public.city LIMIT 5`,
+  sql: `SELECT * FROM public.city LIMIT 10 `,
   
   joins: {
     
