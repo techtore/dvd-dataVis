@@ -11,7 +11,7 @@ A dashboard to visualize and analyze sample dvd rental data.
 node index.js
 ```
 
-- To get the front-end running on localhost: 4000 :
+- To get the front-end running on localhost: 3000 :
 ```bash 
 npm start
 ```
